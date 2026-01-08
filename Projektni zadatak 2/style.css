@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", Arial, sans-serif;
+    background-color: #f0f7f0; 
+    color: #333;
+    line-height: 1.6;
+}
+
+:root {
+    --primary-color: #556B2F; 
+    --dark-green: #3F4F23; 
+    --light-green: #F5F7F0;
+    --accent-color: #FFD700;
+}
+
+header {
+    width: 100%;
+    height: auto; 
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.main-nav {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-nav::before {
+    content: "☰ Meni";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: var(--dark-green); 
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.main-nav:hover ul,
+.main-nav:focus-within ul {
+    display: flex;
+}
+
+.main-nav a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 999px; 
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: var(--accent-color);
+    color: #000;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.main-nav a:active {
+    transform: scale(0.98);
+}
+
+.main-nav a:visited {
+    color: #808080; 
+}
+
+
+
+@media (min-width: 768px) {
+    .main-nav::before {
+        display: none;
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .main-nav a {
+        padding: 0.8rem 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-nav ul {
+        gap: 2rem; 
+    }
+}
