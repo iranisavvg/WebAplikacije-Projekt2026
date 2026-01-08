@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte nas za pitanja, sugestije ili suradnju u zaštiti prirode.">
+    <meta name="keywords" content="kontakt, zaštita prirode, ekologija, suradnja">
+    <meta name="author" content="iranisa">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Kontakt – Zaštita Prirode</title>
+</head>
+<body>
+    
+    <header>
+        <img src="images/banner.jpg" alt="Ruka s drvetom na dlanu i svjetlosnim zrakama - simbol očuvanja prirode" width="100%">
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="o-nama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contact-page intro"> 
+            <h1>Kontaktirajte nas</h1>
+            <p class="contact-intro">Imate pitanja, sugestije ili želite surađivati? Slobodno nam pišite – zajedno čuvamo prirodu!</p>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.797076424922!2d15.990668276575!3d45.789167971081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d68f5e9b5d4d%3A0x2f4e9f1a3b8d8e6f!2sBundek!5e0!3m2!1shr!2shr!4v1700000000000" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="ime">Ime *</label>
+                    <input type="text" id="ime" name="ime" required placeholder="Vaše ime">
+                </div>
+
+                <div class="form-group">
+                    <label for="prezime">Prezime *</label>
+                    <input type="text" id="prezime" name="prezime" required placeholder="Vaše prezime">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail adresa *</label>
+                    <input type="email" id="email" name="email" required placeholder="vaš.email@domena.hr">
+                </div>
+
+                <div class="form-group">
+                    <label for="drzava">Država</label>
+                    <select id="drzava" name="drzava">
+                        <option value="">Odaberite državu</option>
+                        <option value="hr">Hrvatska</option>
+                        <option value="si">Slovenija</option>
+                        <option value="ba">Bosna i Hercegovina</option>
+                        <option value="rs">Srbija</option>
+                        <option value="me">Crna Gora</option>
+                        <option value="mk">Sjeverna Makedonija</option>
+                        <option value="ostalo">Ostalo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="poruka">Poruka *</label>
+                    <textarea id="poruka" name="poruka" rows="6" required placeholder="Vaša poruka..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Pošalji poruku</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Zaštita Prirode – Očuvajmo Naš Planet. Sva prava pridržana.</p>
+            
+            <a href="https://github.com/iranisavvg" target="_blank" class="github-link">
+                <img src="images/github-icon.png" alt="GitHub ikona – link na github">
+                Posjeti moj GitHub profil
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
